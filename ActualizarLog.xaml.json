@@ -1,0 +1,45 @@
+{
+  "DisplayName": "ActualizarLog",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": "#F15D2A",
+  "OriginalIconFileName": "documento.svg",
+  "Arguments": [
+    {
+      "Name": "in_TransactionItem",
+      "DisplayName": "in_TransactionItem",
+      "Category": null,
+      "Tooltip": "Transaction item to be processed.",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Config",
+      "DisplayName": "in_Config",
+      "Category": null,
+      "Tooltip": "Dictionary structure to store configuration data of the process (settings, constants and assets).",
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_TransactionNumber",
+      "DisplayName": "in_TransactionNumber",
+      "Category": null,
+      "Tooltip": "Sequential counter of transaction items.",
+      "Placeholder": null,
+      "Widget": "Number",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

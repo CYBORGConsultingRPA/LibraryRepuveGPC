@@ -1,0 +1,54 @@
+{
+  "name": "LibraryRepuveGPC",
+  "projectId": "71d5453b-bf89-46ae-a40d-61c7c6df90d3",
+  "description": "",
+  "main": "NewActivity.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "3.1.1",
+    "UiPath.System.Activities": "25.4.4",
+    "UiPath.UIAutomation.Activities": "25.10.7"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.9.0",
+  "projectVersion": "1.0.1.38",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Library",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {
+    "iconUrl": "https://lh5.googleusercontent.com/-iUF6gJfoXUg/AAAAAAAAAAI/AAAAAAAAAAA/C5p3-RSuSWo/s40-c-k-mo/photo.jpg"
+  },
+  "targetFramework": "Windows"
+}

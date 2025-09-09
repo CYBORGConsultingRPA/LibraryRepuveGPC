@@ -1,0 +1,33 @@
+{
+  "DisplayName": "ObtenerColumnasVaciasObligatorios",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": "#F15D2A",
+  "OriginalIconFileName": "Lib.svg",
+  "Arguments": [
+    {
+      "Name": "in_TransactionItem",
+      "DisplayName": "in_TransactionItem",
+      "Category": null,
+      "Tooltip": "Transaction item to be processed.",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_ColumnsVacias",
+      "DisplayName": "out_ColumnsVacias",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

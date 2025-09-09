@@ -1,0 +1,45 @@
+{
+  "DisplayName": "ObtenerMetricas",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": "#F15D2A",
+  "OriginalIconFileName": "Lib.svg",
+  "Arguments": [
+    {
+      "Name": "in_Inicial",
+      "DisplayName": "in_Inicial",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "True",
+      "Widget": "Toggle",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "io_HoraInicial",
+      "DisplayName": "io_HoraInicial",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Track",
+      "DisplayName": "in_Track",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
