@@ -88,16 +88,17 @@
       <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ManejarDatosBD" sap:VirtualizedContainerService.HintSize="630,730" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ManejarDatosBD" sap:VirtualizedContainerService.HintSize="1281,730" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message - Initial" sap:VirtualizedContainerService.HintSize="478,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[io_TransactionItem.SpecificContent(&quot;SERIE&quot;).ToString.Trim+&quot; | Modulo Reciclado | Manejando Datos BD.&quot;]" />
-    <ui:MultipleAssign DisplayName="Asignar Multiples Variables" sap:VirtualizedContainerService.HintSize="478,366" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:LogMessage DisplayName="Log Message - Initial" sap:VirtualizedContainerService.HintSize="479,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[io_TransactionItem.SpecificContent(&quot;SERIE&quot;).ToString.Trim+&quot; | Modulo Reciclado | Manejando Datos BD.&quot;]" />
+    <ui:MultipleAssign DisplayName="Asignar Multiples Variables" sap:VirtualizedContainerService.HintSize="479,366" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -121,7 +122,7 @@
               <OutArgument x:TypeArguments="x:String">[out_strEstadoM]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String" xml:space="preserve">[If(io_TransactionItem.SpecificContent("ESTADO").ToString.ToUpper.Trim.Contains("CIUDAD DE MEXICO") Or io_TransactionItem.SpecificContent("ESTADO").ToString.ToUpper.Trim.Contains("CIUDAD DE MÉXICO"), "DISTRITO FEDERAL",
+              <InArgument x:TypeArguments="x:String" xml:space="preserve">[If(io_TransactionItem.SpecificContent("ESTADO").ToString.ToUpper.Trim.Contains("DISTRITO FEDERAL") Or io_TransactionItem.SpecificContent("ESTADO").ToString.ToUpper.Trim.Contains("CIUDAD DE MÉXICO"), "CIUDAD DE MEXICO",
 If(io_TransactionItem.SpecificContent("ESTADO").ToString.ToUpper.Trim.Contains("MÉXICO"), "MEXICO",
 If(io_TransactionItem.SpecificContent("ESTADO").ToString.ToUpper.Trim.Contains("MICHOACAN DE OCAMPO"), "MICHOACAN",
 If(Io_TransactionItem.SpecificContent("ESTADO").ToString.ToUpper.Trim.Contains("VERACRUZ DE IGNACIO DE LA LLAVE"), "VERACRUZ",
@@ -188,12 +189,12 @@ String.Empty))))))]</InArgument>
               <OutArgument x:TypeArguments="x:String">[out_strNombre]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String" xml:space="preserve">[System.Text.RegularExpressions.Regex.Replace((io_TransactionItem.SpecificContent("NOMBRE").ToString.Replace("."," ").ToString.Replace("  "," ")), "[^a-zA-Z0-9 &amp;]", "")]</InArgument>
+              <InArgument x:TypeArguments="x:String" xml:space="preserve">[System.Text.RegularExpressions.Regex.Replace((io_TransactionItem.SpecificContent("NOMBRE").ToString.Replace("."," ").ToString.Replace("  "," ")), "[^a-zA-Z0-9]", "")]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:LogMessage DisplayName="Log Message - Final" sap:VirtualizedContainerService.HintSize="478,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[io_TransactionItem.SpecificContent(&quot;SERIE&quot;).ToString.Trim+&quot; | Datos Actualizados.&quot;]" />
+    <ui:LogMessage DisplayName="Log Message - Final" sap:VirtualizedContainerService.HintSize="479,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[io_TransactionItem.SpecificContent(&quot;SERIE&quot;).ToString.Trim+&quot; | Datos Actualizados.&quot;]" />
   </Sequence>
 </Activity>
